@@ -1,4 +1,4 @@
-# FontAutomizer
+# Font Automizer
 A script to automate the creation of Bengali font packages for Magisk and Recovery.
 
 ## Features
