@@ -6,7 +6,7 @@ A script to automate the creation of Bengali font packages for Magisk and Recove
 * Can create Bengali font packages for Recovery.
 
 ## Newest Release
-[v1.0.0](https://github.com/font-freak/FontAutomizer/releases)
+[v1.0.0](https://github.com/NaeemBolchhi/FontAutomizer/releases)
 
 ## Documentation
 Coming soon.
