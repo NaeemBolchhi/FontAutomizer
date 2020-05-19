@@ -28,7 +28,7 @@ Note that the program does not come with any fonts. You have to obtain and provi
 ![Step-8](https://user-images.githubusercontent.com/42773187/82299644-97adf580-99d7-11ea-8d18-501fa8d0f06b.png)
 ![Step-9](https://user-images.githubusercontent.com/42773187/82299647-98468c00-99d7-11ea-9b5a-d153eb98b670.png)
 #### Step 6: Continue If You Agree
-![Step-10](https://user-images.githubusercontent.com/42773187/82299648-98468c00-99d7-11ea-93df-cd6a29f34158.png)
+![Step-10](https://user-images.githubusercontent.com/42773187/82302900-0d1bc500-99dc-11ea-9015-bf5896597cc5.png)
 #### Success: Processing and Completion
 ![Step-11](https://user-images.githubusercontent.com/42773187/82299649-98df2280-99d7-11ea-9704-8dd98a30bb58.png)
 ![Step-12](https://user-images.githubusercontent.com/42773187/82299652-9977b900-99d7-11ea-8aa2-d6679f51e16c.png)
