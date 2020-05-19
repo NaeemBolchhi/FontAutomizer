@@ -1,5 +1,5 @@
 :: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ::
-::    Font Automizer: Automize Bengali Font Packages for Android               ::
+::    Font Automizer: Automate Bengali Font Packages for Android               ::
 ::    Copyright (C) 2020  NaeemBolchhi                                         ::
 ::                                                                             ::
 ::    This program is free software: you can redistribute it and/or modify     ::
@@ -94,7 +94,7 @@ if exist 1.otf (
   echo ^- Cannot proceed without an input font.
   echo ^  Download a Bengali Unicode font and rename accordingly.
   echo ^  Visit Github for more information.
-  echo ^  https://github.com/font-freak/FontAutomizer
+  echo ^  https://github.com/NaeemBolchhi/FontAutomizer
   echo ^  Automation will now end.
   goto FAIL
   )
@@ -181,7 +181,7 @@ goto LICENSE
 echo.
 echo ^| LICENSE
 echo.
-echo ^  Font Automizer: Automize Bengali Font Packages for Android
+echo ^  Font Automizer: Automate Bengali Font Packages for Android
 echo ^  Copyright (C) 2020 NaeemBolchhi
 echo.
 echo ^  This program is free software: you can redistribute it and/or modify
@@ -244,7 +244,7 @@ REM The following sections may only run when called.
 echo Font Automizer v1.0.0
 echo Copyright (C) 2020 NaeemBolchhi
 echo ^- https://naeembolchhi.github.io/
-echo ^- https://github.com/font-freak/FontAutomizer
+echo ^- https://github.com/NaeemBolchhi/FontAutomizer
 echo.
 exit /b
 
@@ -331,7 +331,7 @@ exit /b
   echo ui_print^("| JRummy Apps Inc."^);
   echo ui_print^(" "^);
   echo ui_print^("| Created with Font Automizer"^);
-  echo ui_print^("| https://github.com/font-freak/FontAutomizer"^);
+  echo ui_print^("| https://github.com/NaeemBolchhi/FontAutomizer"^);
   echo ui_print^(" "^);
   echo ui_print^(" "^);
 ) > "%autoFOLDER2%\META-INF\com\google\android\updater-script"
