@@ -1,7 +1,6 @@
 # Font Automizer
 A script to automate the creation of Bengali font packages for Magisk and Recovery.
-    The program does not come with any fonts. You have to obtain and provide the Unicode
-    Bengali fonts by yourself.
+Note that the program does not come with any fonts. You have to obtain and provide the Unicode Bengali fonts by yourself.
 
 ## Features
 * Can create Bengali font modules for Magisk.
