@@ -10,7 +10,8 @@ Note that the program does not come with any fonts. You have to obtain and provi
 [v1.0.0](https://github.com/NaeemBolchhi/FontAutomizer/releases)
 
 ## Documentation
-Coming soon.
+### Download
+
 
 ## License
 
