@@ -36,7 +36,7 @@ Note that the program does not come with any fonts. You have to obtain and provi
 
 ## License
 
-    Font Automizer: Automize Bengali Font Packages for Android
+    Font Automizer: Automate Bengali Font Packages for Android
     Copyright (C) 2020 NaeemBolchhi
 
     This program is free software: you can redistribute it and/or modify
