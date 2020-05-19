@@ -10,8 +10,29 @@ Note that the program does not come with any fonts. You have to obtain and provi
 [v1.0.0](https://github.com/NaeemBolchhi/FontAutomizer/releases)
 
 ## Documentation
-### Download
-
+#### Step 1: Download
+![Step-1](https://user-images.githubusercontent.com/42773187/82299622-9086e780-99d7-11ea-9f52-a2fda5078ba0.png)
+![Step-2](https://user-images.githubusercontent.com/42773187/82299629-941a6e80-99d7-11ea-916b-46c1d389ca33.png)
+#### Step 2: Extract
+![Step-3](https://user-images.githubusercontent.com/42773187/82299633-94b30500-99d7-11ea-92db-bd4f9096a564.png)
+![Step-4](https://user-images.githubusercontent.com/42773187/82299635-954b9b80-99d7-11ea-95a7-dff09ed5e59f.png)
+#### Step 3: Get Font & Rename
+##### It is up to you where you get your fonts.
+![Step-5](https://user-images.githubusercontent.com/42773187/82299637-95e43200-99d7-11ea-9c20-29333b86c960.png)
+![Step-6](https://user-images.githubusercontent.com/42773187/82299641-967cc880-99d7-11ea-892f-d38c2105c982.png)
+##### You can add up to three fonts, either TTF or OTF format. (1=Regular; 2=Bold; 3=Medium)
+![Step-6a](https://user-images.githubusercontent.com/42773187/82301096-941b6e00-99d9-11ea-9ad9-dc7ec2a17e12.png)
+#### Step 4: Start "automate.bat"
+![Step-7](https://user-images.githubusercontent.com/42773187/82299643-97155f00-99d7-11ea-8e65-c29c5cf7eb7a.png)
+#### Step 5: Add Required Information
+![Step-8](https://user-images.githubusercontent.com/42773187/82299644-97adf580-99d7-11ea-8d18-501fa8d0f06b.png)
+![Step-9](https://user-images.githubusercontent.com/42773187/82299647-98468c00-99d7-11ea-9b5a-d153eb98b670.png)
+#### Step 6: Continue If You Agree
+![Step-10](https://user-images.githubusercontent.com/42773187/82299648-98468c00-99d7-11ea-93df-cd6a29f34158.png)
+#### Success: Processing and Completion
+![Step-11](https://user-images.githubusercontent.com/42773187/82299649-98df2280-99d7-11ea-9704-8dd98a30bb58.png)
+![Step-12](https://user-images.githubusercontent.com/42773187/82299652-9977b900-99d7-11ea-8aa2-d6679f51e16c.png)
+![Step-13](https://user-images.githubusercontent.com/42773187/82301821-9b8f4700-99da-11ea-8568-aef22f6ad06e.png)
 
 ## License
 
