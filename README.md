@@ -43,5 +43,5 @@ Coming soon.
     
 ## Agreement
 
-By downloading and using this program, you hereby agree that you have
-read, understood and accepted the terms as stated in the License.
+    By downloading and using this program, you hereby agree that you have
+    read, understood and accepted the terms as stated in the License.
