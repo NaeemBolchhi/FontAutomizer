@@ -10,6 +10,8 @@ Note that the program does not come with any fonts. You have to obtain and provi
 [v1.0.0](https://github.com/NaeemBolchhi/FontAutomizer/releases)
 
 ## Documentation
+#### Step 0: Show File Extensions
+Follow this [tutorial](https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/).
 #### Step 1: Download
 ![Step-1](https://user-images.githubusercontent.com/42773187/82299622-9086e780-99d7-11ea-9f52-a2fda5078ba0.png)
 ![Step-2](https://user-images.githubusercontent.com/42773187/82299629-941a6e80-99d7-11ea-916b-46c1d389ca33.png)
