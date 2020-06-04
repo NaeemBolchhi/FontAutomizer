@@ -241,16 +241,16 @@ REM Ends the script. Protects the following sections from running.
 :END
 exit
 
-:INVALID
-echo.
-echo ^- Value cannot be empty.
-echo ^  Automation will now end.
-goto FAIL
-
 :DEPENDENCY
 echo ^- "%lost%" was not found.
 echo.
 echo ^- Ensure all dependencies are present and try again.
+echo ^  Automation will now end.
+goto FAIL
+
+:INVALID
+echo.
+echo ^- Value cannot be empty.
 echo ^  Automation will now end.
 goto FAIL
 
