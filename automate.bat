@@ -17,14 +17,28 @@
 :: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ::
 
 @echo off
-title Font Automizer v1.0.0 by NaeemBolchhi
+title Font Automizer v1.1.0 by NaeemBolchhi
 call :INFO
 call :WINBIT
 
 echo.
 echo ^| VERIFYING FILES
-REM Check if _template.zip exists.
 echo.
+REM Background check for dependencies.
+if not exist _7za.exe (
+  set "lost=_7za.exe"
+  goto DEPENDENCY
+)
+if not exist _dos2unix32.exe (
+  set "lost=_dos2unix32.exe"
+  goto DEPENDENCY
+)
+if not exist _dos2unix64.exe (
+  set "lost=_dos2unix64.exe"
+  goto DEPENDENCY
+)
+
+REM Check if _template.zip exists.
 echo ^- Searching for the template.
 if exist _template.zip (
   echo ^  "_template.zip" was found.
@@ -233,6 +247,13 @@ echo ^- Value cannot be empty.
 echo ^  Automation will now end.
 goto FAIL
 
+:DEPENDENCY
+echo ^- "%lost%" was not found.
+echo.
+echo ^- Ensure all dependencies are present and try again.
+echo ^  Automation will now end.
+goto FAIL
+
 :FAIL
 echo.
 title Font Automizer v1.0.0 by NaeemBolchhi (FAILED!)
@@ -340,11 +361,8 @@ exit /b
 
 :MAGISKfonts
 copy %autoREGULAR% "%autoFOLDER%\fonts\Regular.otf"
-copy %autoREGULAR% "%autoFOLDER%\fonts\RegularUI.otf"
 copy %autoMEDIUM% "%autoFOLDER%\fonts\Medium.otf"
-copy %autoMEDIUM% "%autoFOLDER%\fonts\MediumUI.otf"
 copy %autoBOLD% "%autoFOLDER%\fonts\Bold.otf"
-copy %autoBOLD% "%autoFOLDER%\fonts\BoldUI.otf"
 exit /b
 
 :RECOVERYfonts
@@ -365,7 +383,14 @@ copy %autoBOLD% "%autoFOLDER2%\system\fonts\SECBengali-Bold.ttf"
 copy %autoBOLD% "%autoFOLDER2%\system\fonts\SECBengaliUI-Bold.ttf"
 copy %autoREGULAR% "%autoFOLDER2%\system\fonts\SECBengali-Regular.ttf"
 copy %autoREGULAR% "%autoFOLDER2%\system\fonts\SECBengaliUI-Regular.ttf"
+copy %autoBOLD% "%autoFOLDER2%\system\fonts\SECBengali-Bold.otf"
+copy %autoBOLD% "%autoFOLDER2%\system\fonts\SECBengaliUI-Bold.otf"
+copy %autoMEDIUM% "%autoFOLDER2%\system\fonts\SECBengali-Medium.otf"
+copy %autoMEDIUM% "%autoFOLDER2%\system\fonts\SECBengaliUI-Medium.otf"
+copy %autoREGULAR% "%autoFOLDER2%\system\fonts\SECBengali-Regular.otf"
+copy %autoREGULAR% "%autoFOLDER2%\system\fonts\SECBengaliUI-Regular.otf"
 exit /b
 
 :: Script complete.
 :: v1.0.0 on 18 May 2020. Initial release.
+:: v1.1.0 on 04 Jun 2020. Minor update.
