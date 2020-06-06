@@ -7,7 +7,7 @@ Note that the program does not come with any fonts. You have to obtain and provi
 * Can create Bengali font packages for Recovery.
 
 ## Newest Release
-[v1.1.0](https://github.com/NaeemBolchhi/FontAutomizer/releases)
+[v1.1.1](https://github.com/NaeemBolchhi/FontAutomizer/releases)
 
 ## Documentation
 #### Step 0: Show File Extensions
