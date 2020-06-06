@@ -17,7 +17,8 @@
 :: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ::
 
 @echo off
-title Font Automizer v1.1.0 by NaeemBolchhi
+set "VER=1.1.1"
+title Font Automizer v%VER% by NaeemBolchhi
 call :INFO
 call :WINBIT
 
@@ -183,6 +184,8 @@ set /p _autoDESC=^> Enter Description:
 if "%_autoDESC%"=="" goto INVALID
 set "autoFOLDER=auto_dQw4w9WgXcQ_m"
 set "autoFOLDER2=auto_dQw4w9WgXcQ_r"
+set "samsungFOLDER=samsung_dQw4w9WgXcQ_m"
+set "samsungFOLDER2=samsung_dQw4w9WgXcQ_r"
 echo.
 echo ^- Successful!
 echo.
@@ -233,6 +236,7 @@ call :MAGISKinfo
 call :RECOVERYinfo
 call :MAGISKfonts
 call :RECOVERYfonts
+call :PLACEHOLDER
 call :ZIP
 call :DELETE
 goto END
@@ -256,13 +260,13 @@ goto FAIL
 
 :FAIL
 echo.
-title Font Automizer v1.0.0 by NaeemBolchhi (FAILED!)
+title Font Automizer v%VER% by NaeemBolchhi (FAILED!)
 pause
 exit
 
 REM The following sections may only run when called.
 :INFO
-echo Font Automizer v1.0.0
+echo Font Automizer v%VER%
 echo Copyright (C) 2020 NaeemBolchhi
 echo ^- https://naeembolchhi.github.io/
 echo ^- https://github.com/NaeemBolchhi/FontAutomizer
@@ -286,6 +290,14 @@ if exist "%autoFOLDER2%" (
   del /f /s /q "%autoFOLDER2%" 1>nul
   rd /s /q "%autoFOLDER2%"
 )
+if exist "%samsungFOLDER%" (
+  del /f /s /q "%samsungFOLDER%" 1>nul
+  rd /s /q "%samsungFOLDER%"
+)
+if exist "%samsungFOLDER2%" (
+  del /f /s /q "%samsungFOLDER2%" 1>nul
+  rd /s /q "%samsungFOLDER2%"
+)
 exit /b
 
 :UNZIP
@@ -295,6 +307,8 @@ exit /b
 :ZIP
 _7za a .\FA\auto_%_autoID%_magisk.zip .\%autoFOLDER%\*
 _7za a .\FA\auto_%_autoID%_recovery.zip .\%autoFOLDER2%\*
+_7za a .\FA\samsung_%_autoID%_magisk.zip .\%samsungFOLDER%\*
+_7za a .\FA\samsung_%_autoID%_recovery.zip .\%samsungFOLDER2%\*
 exit /b
 
 REM Background Tasks
@@ -357,12 +371,17 @@ exit /b
   echo ui_print^(" "^);
 ) > "%autoFOLDER2%\META-INF\com\google\android\updater-script"
 dos2unix%WINBIT% "%autoFOLDER2%\META-INF\com\google\android\updater-script"
+copy "%autoFOLDER2%\META-INF\com\google\android\updater-script" "%samsungFOLDER2%\META-INF\com\google\android\updater-script"
 exit /b
 
 :MAGISKfonts
 copy %autoREGULAR% "%autoFOLDER%\fonts\Regular.otf"
 copy %autoMEDIUM% "%autoFOLDER%\fonts\Medium.otf"
 copy %autoBOLD% "%autoFOLDER%\fonts\Bold.otf"
+REM Samsung Below
+copy %autoREGULAR% "%samsungFOLDER%\fonts\Regular.otf"
+copy %autoMEDIUM% "%samsungFOLDER%\fonts\Medium.otf"
+copy %autoBOLD% "%samsungFOLDER%\fonts\Bold.otf"
 exit /b
 
 :RECOVERYfonts
@@ -379,18 +398,40 @@ copy %autoREGULAR% "%autoFOLDER2%\system\fonts\NotoSansBengaliUI-Regular.ttf"
 copy %autoBOLD% "%autoFOLDER2%\system\fonts\NotoSerifBengali-Bold.ttf"
 copy %autoREGULAR% "%autoFOLDER2%\system\fonts\NotoSerifBengali-Regular.ttf"
 copy %autoREGULAR% "%autoFOLDER2%\system\fonts\DroidSansBengali.ttf"
-copy %autoBOLD% "%autoFOLDER2%\system\fonts\SECBengali-Bold.ttf"
-copy %autoBOLD% "%autoFOLDER2%\system\fonts\SECBengaliUI-Bold.ttf"
-copy %autoREGULAR% "%autoFOLDER2%\system\fonts\SECBengali-Regular.ttf"
-copy %autoREGULAR% "%autoFOLDER2%\system\fonts\SECBengaliUI-Regular.ttf"
-copy %autoBOLD% "%autoFOLDER2%\system\fonts\SECBengali-Bold.otf"
-copy %autoBOLD% "%autoFOLDER2%\system\fonts\SECBengaliUI-Bold.otf"
-copy %autoMEDIUM% "%autoFOLDER2%\system\fonts\SECBengali-Medium.otf"
-copy %autoMEDIUM% "%autoFOLDER2%\system\fonts\SECBengaliUI-Medium.otf"
-copy %autoREGULAR% "%autoFOLDER2%\system\fonts\SECBengali-Regular.otf"
-copy %autoREGULAR% "%autoFOLDER2%\system\fonts\SECBengaliUI-Regular.otf"
+REM SAMSUNG Below
+copy %autoBOLD% "%samsungFOLDER2%\system\fonts\NotoSansBengali-Bold.otf"
+copy %autoBOLD% "%samsungFOLDER2%\system\fonts\NotoSansBengaliUI-Bold.otf"
+copy %autoMEDIUM% "%samsungFOLDER2%\system\fonts\NotoSansBengali-Medium.otf"
+copy %autoMEDIUM% "%samsungFOLDER2%\system\fonts\NotoSansBengaliUI-Medium.otf"
+copy %autoREGULAR% "%samsungFOLDER2%\system\fonts\NotoSansBengali-Regular.otf"
+copy %autoREGULAR% "%samsungFOLDER2%\system\fonts\NotoSansBengaliUI-Regular.otf"
+copy %autoBOLD% "%samsungFOLDER2%\system\fonts\NotoSansBengali-Bold.ttf"
+copy %autoBOLD% "%samsungFOLDER2%\system\fonts\NotoSansBengaliUI-Bold.ttf"
+copy %autoREGULAR% "%samsungFOLDER2%\system\fonts\NotoSansBengali-Regular.ttf"
+copy %autoREGULAR% "%samsungFOLDER2%\system\fonts\NotoSansBengaliUI-Regular.ttf"
+copy %autoBOLD% "%samsungFOLDER2%\system\fonts\NotoSerifBengali-Bold.ttf"
+copy %autoREGULAR% "%samsungFOLDER2%\system\fonts\NotoSerifBengali-Regular.ttf"
+copy %autoREGULAR% "%samsungFOLDER2%\system\fonts\DroidSansBengali.ttf"
+copy %autoBOLD% "%samsungFOLDER2%\system\fonts\SECBengali-Bold.ttf"
+copy %autoBOLD% "%samsungFOLDER2%\system\fonts\SECBengaliUI-Bold.ttf"
+copy %autoREGULAR% "%samsungFOLDER2%\system\fonts\SECBengali-Regular.ttf"
+copy %autoREGULAR% "%samsungFOLDER2%\system\fonts\SECBengaliUI-Regular.ttf"
+copy %autoBOLD% "%samsungFOLDER2%\system\fonts\SECBengali-Bold.otf"
+copy %autoBOLD% "%samsungFOLDER2%\system\fonts\SECBengaliUI-Bold.otf"
+copy %autoMEDIUM% "%samsungFOLDER2%\system\fonts\SECBengali-Medium.otf"
+copy %autoMEDIUM% "%samsungFOLDER2%\system\fonts\SECBengaliUI-Medium.otf"
+copy %autoREGULAR% "%samsungFOLDER2%\system\fonts\SECBengali-Regular.otf"
+copy %autoREGULAR% "%samsungFOLDER2%\system\fonts\SECBengaliUI-Regular.otf"
+exit /b
+
+:PLACEHOLDER
+del /f /q "%autoFOLDER%\fonts\.placeholder" 1>nul
+del /f /q "%autoFOLDER2%\system\fonts\.placeholder" 1>nul
+del /f /q "%samsungFOLDER%\fonts\.placeholder" 1>nul
+del /f /q "%samsungFOLDER2%\system\fonts\.placeholder" 1>nul
 exit /b
 
 :: Script complete.
 :: v1.0.0 on 18 May 2020. Initial release.
 :: v1.1.0 on 04 Jun 2020. Minor update.
+:: v1.1.1 on 07 Jun 2020. Bug fix.
