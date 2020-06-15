@@ -17,7 +17,7 @@
 :: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ::
 
 @echo off
-set "VER=2.0.0"
+set "VER=2.0.1"
 title [EN] Font Automizer v%VER% by NaeemBolchhi
 call :INFO
 call :WINBIT
@@ -83,7 +83,7 @@ if exist 104.ttf (
   set "auto104=104.ttf"
 ) else (
   echo ^  "104.ttf" was not found.
-  set "auto104=%auto102%"
+  set "auto104=%auto103%"
   )
 if exist 105.ttf (
   echo ^  "105.ttf" was found.
@@ -97,7 +97,7 @@ if exist 106.ttf (
   set "auto106=106.ttf"
 ) else (
   echo ^  "106.ttf" was not found.
-  set "auto106=%auto104%"
+  set "auto106=%auto105%"
   )
 if exist 107.ttf (
   echo ^  "107.ttf" was found.
@@ -111,7 +111,7 @@ if exist 108.ttf (
   set "auto108=108.ttf"
 ) else (
   echo ^  "108.ttf" was not found.
-  set "auto108=%auto104%"
+  set "auto108=%auto107%"
   )
 if exist 109.ttf (
   echo ^  "109.ttf" was found.
@@ -125,21 +125,21 @@ if exist 110.ttf (
   set "auto110=110.ttf"
 ) else (
   echo ^  "110.ttf" was not found.
-  set "auto110=%auto102%"
+  set "auto110=%auto109%"
   )
 if exist 111.ttf (
   echo ^  "111.ttf" was found.
   set "auto111=111.ttf"
 ) else (
   echo ^  "111.ttf" was not found.
-  set "auto111=%auto101%"
+  set "auto111=%auto109%"
   )
 if exist 112.ttf (
   echo ^  "112.ttf" was found.
   set "auto112=112.ttf"
 ) else (
   echo ^  "112.ttf" was not found.
-  set "auto112=%auto102%"
+  set "auto112=%auto111%"
   )
 goto VERIFYttf_200
 
@@ -174,7 +174,7 @@ if exist 104.otf (
   set "auto104=104.otf"
 ) else (
   echo ^  "104.otf" was not found.
-  set "auto104=%auto102%"
+  set "auto104=%auto103%"
   )
 if exist 105.otf (
   echo ^  "105.otf" was found.
@@ -188,7 +188,7 @@ if exist 106.otf (
   set "auto106=106.otf"
 ) else (
   echo ^  "106.otf" was not found.
-  set "auto106=%auto104%"
+  set "auto106=%auto105%"
   )
 if exist 107.otf (
   echo ^  "107.otf" was found.
@@ -202,7 +202,7 @@ if exist 108.otf (
   set "auto108=108.otf"
 ) else (
   echo ^  "108.otf" was not found.
-  set "auto108=%auto104%"
+  set "auto108=%auto107%"
   )
 if exist 109.otf (
   echo ^  "109.otf" was found.
@@ -216,21 +216,21 @@ if exist 110.otf (
   set "auto110=110.otf"
 ) else (
   echo ^  "110.otf" was not found.
-  set "auto110=%auto102%"
+  set "auto110=%auto109%"
   )
 if exist 111.otf (
   echo ^  "111.otf" was found.
   set "auto111=111.otf"
 ) else (
   echo ^  "111.otf" was not found.
-  set "auto111=%auto101%"
+  set "auto111=%auto109%"
   )
 if exist 112.otf (
   echo ^  "112.otf" was found.
   set "auto112=112.otf"
 ) else (
   echo ^  "112.otf" was not found.
-  set "auto112=%auto102%"
+  set "auto112=%auto111%"
   )
 goto VERIFYttf_200
 
@@ -263,7 +263,7 @@ if exist 204.ttf (
   set "auto204=204.ttf"
 ) else (
   echo ^  "204.ttf" was not found.
-  set "auto204=%auto202%"
+  set "auto204=%auto203%"
   )
 if exist 205.ttf (
   echo ^  "205.ttf" was found.
@@ -277,7 +277,7 @@ if exist 206.ttf (
   set "auto206=206.ttf"
 ) else (
   echo ^  "206.ttf" was not found.
-  set "auto206=%auto204%"
+  set "auto206=%auto205%"
   )
 if exist 207.ttf (
   echo ^  "207.ttf" was found.
@@ -291,7 +291,7 @@ if exist 208.ttf (
   set "auto208=208.ttf"
 ) else (
   echo ^  "208.ttf" was not found.
-  set "auto208=%auto202%"
+  set "auto208=%auto207%"
   )
 goto VERIFYttf_300
 
@@ -325,7 +325,7 @@ if exist 204.otf (
   set "auto204=204.otf"
 ) else (
   echo ^  "204.otf" was not found.
-  set "auto204=%auto202%"
+  set "auto204=%auto203%"
   )
 if exist 205.otf (
   echo ^  "205.otf" was found.
@@ -339,7 +339,7 @@ if exist 206.otf (
   set "auto206=206.otf"
 ) else (
   echo ^  "206.otf" was not found.
-  set "auto206=%auto204%"
+  set "auto206=%auto205%"
   )
 if exist 207.otf (
   echo ^  "207.otf" was found.
@@ -353,7 +353,7 @@ if exist 208.otf (
   set "auto208=208.otf"
 ) else (
   echo ^  "208.otf" was not found.
-  set "auto208=%auto202%"
+  set "auto208=%auto207%"
   )
 goto VERIFYttf_300
 
@@ -561,13 +561,13 @@ exit /b
 REM Background Tasks
 :MAGISKinfo
 (
-  echo id=bn_%_autoID%
+  echo id=en_%_autoID%
   echo name=[EN] %_autoNAME%
   echo version=v%VER%
   echo versionCode=1
   echo author=%_autoAUTHOR%
   echo description=Systemlessly replaces default English/Emoji font. [Created with Font Automizer]
-  echo support=https://naeembolchhi.github.io/
+  echo support=https://github.com/NaeemBolchhi/FontAutomizer
 ) > "%enFOLDER%\module.prop"
 _dos2unix%WINBIT% "%enFOLDER%\module.prop"
 exit /b
@@ -614,3 +614,4 @@ exit /b
 :: v1.1.0 on 04 Jun 2020. Minor update.
 :: v1.1.1 on 07 Jun 2020. Bug fix.
 :: v2.0.0 on 14 Jun 2020. Support for English fonts.
+:: v2.0.1 on 16 Jun 2020. Improved logic. Minor bug fix.

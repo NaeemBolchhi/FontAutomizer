@@ -17,7 +17,7 @@
 :: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ::
 
 @echo off
-set "VER=2.0.0"
+set "VER=2.0.1"
 title [BN] Font Automizer v%VER% by NaeemBolchhi
 call :INFO
 call :WINBIT
@@ -311,7 +311,7 @@ REM Background Tasks
   echo versionCode=1
   echo author=%_autoAUTHOR%
   echo description=Systemlessly replaces default Bengali font. [Created with Font Automizer]
-  echo support=https://naeembolchhi.github.io/
+  echo support=https://github.com/NaeemBolchhi/FontAutomizer
 ) > "%bnFOLDER%\module.prop"
 _dos2unix%WINBIT% "%bnFOLDER%\module.prop"
 exit /b
@@ -427,3 +427,4 @@ exit /b
 :: v1.1.0 on 04 Jun 2020. Minor update.
 :: v1.1.1 on 07 Jun 2020. Bug fix.
 :: v2.0.0 on 14 Jun 2020. Support for English fonts.
+:: v2.0.1 on 16 Jun 2020. Improved logic. Minor bug fix.
