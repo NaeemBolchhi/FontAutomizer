@@ -1,13 +1,13 @@
 # Font Automizer
-A script to automate the creation of Bengali font packages for Magisk and Recovery.
-Note that the program does not come with any fonts. You have to obtain and provide the Unicode Bengali fonts by yourself.
+A script to automate the creation of Bengali/English font packages for Magisk and Recovery.
+Note that the program does not come with any fonts. You have to obtain and provide the Unicode fonts by yourself.
 
 ## Features
-* Can create Bengali font modules for Magisk.
+* Can create Bengali and English font modules for Magisk.
 * Can create Bengali font packages for Recovery.
 
 ## Newest Release
-[v1.1.1](https://github.com/NaeemBolchhi/FontAutomizer/releases)
+[v2.0.0](https://github.com/NaeemBolchhi/FontAutomizer/releases)
 
 ## Documentation
 #### Step 0: Show File Extensions
@@ -69,3 +69,9 @@ Follow this [tutorial](https://www.howtogeek.com/205086/beginner-how-to-make-win
 
     By downloading and using this program, you hereby agree that you have
     read, understood and accepted the terms as stated in the License.
+
+## Dependencies
+- [7za](https://www.7-zip.org/download.html)
+- [Dos2Unix](https://sourceforge.net/projects/dos2unix/)
+- [MMT-Ex](https://github.com/Zackptg5/MMT-Extended)
+- [CFI](https://github.com/nongthaihoang/custom_font_installer)
