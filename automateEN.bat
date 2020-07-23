@@ -17,7 +17,7 @@
 :: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ::
 
 @echo off
-set "VER=2.0.1"
+set "VER=2.0.2"
 title [EN] Font Automizer v%VER% by NaeemBolchhi
 call :INFO
 call :WINBIT
@@ -615,3 +615,4 @@ exit /b
 :: v1.1.1 on 07 Jun 2020. Bug fix.
 :: v2.0.0 on 14 Jun 2020. Support for English fonts.
 :: v2.0.1 on 16 Jun 2020. Improved logic. Minor bug fix.
+:: v2.0.2 on 23 Jul 2020. English base updated to CFI-v2.0.

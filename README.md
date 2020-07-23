@@ -21,7 +21,7 @@ Do the following step by step __(*important)__:
   Medium > 2.ttf
   Bold > 3.ttf
   ```
-- For __English__ (Standard), rename according to this chart.
+- For __English (Standard)__, rename according to this chart.
 - __At least ``101.ttf`` should be present for changes to take effect.__
   ```
   Regular > 101.ttf
@@ -41,7 +41,7 @@ Do the following step by step __(*important)__:
   Thin > 111.ttf
   Thin Italic > 112.ttf
   ```
-- For __English__ Condensed, rename according to this chart.
+- For __English Condensed__, rename according to this chart.
 - __At least ``201.ttf`` should be present for changes to take effect.__
   ```
   Condensed Regular > 201.ttf
@@ -55,7 +55,7 @@ Do the following step by step __(*important)__:
   Condensed Light > 207.ttf
   Condensed Light Italic > 208.ttf
   ```
-- For __English__ Monospace, rename to ``301.ttf``.
+- For __English Monospace__, rename to ``301.ttf``.
 - For __Emoji__, rename to ``401.ttf``.
 - For the rest, rename to the font name you want to replace in ```/system/fonts```.
 - Finally, flash the FFI zip in Magisk and reboot.
