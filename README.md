@@ -7,34 +7,60 @@ Note that the program does not come with any fonts. You have to obtain and provi
 * Can create Bengali font packages for Recovery.
 
 ## Newest Release
-[v2.0.1](https://github.com/NaeemBolchhi/FontAutomizer/releases)
+[v2.0.2](https://github.com/NaeemBolchhi/FontAutomizer/releases)
 
-## Documentation
-#### Step 0: Show File Extensions
-Follow this [tutorial](https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/).
-#### Step 1: Download
-![Step-1](https://user-images.githubusercontent.com/42773187/82299622-9086e780-99d7-11ea-9f52-a2fda5078ba0.png)
-![Step-2](https://user-images.githubusercontent.com/42773187/82299629-941a6e80-99d7-11ea-916b-46c1d389ca33.png)
-#### Step 2: Extract
-![Step-3](https://user-images.githubusercontent.com/42773187/82299633-94b30500-99d7-11ea-92db-bd4f9096a564.png)
-![Step-4](https://user-images.githubusercontent.com/42773187/82299635-954b9b80-99d7-11ea-95a7-dff09ed5e59f.png)
-#### Step 3: Get Font & Rename
-##### It is up to you where you get your fonts.
-![Step-5](https://user-images.githubusercontent.com/42773187/82299637-95e43200-99d7-11ea-9c20-29333b86c960.png)
-![Step-6](https://user-images.githubusercontent.com/42773187/82299641-967cc880-99d7-11ea-892f-d38c2105c982.png)
-##### You can add up to three fonts, either TTF or OTF format. (1=Regular; 2=Bold; 3=Medium)
-![Step-6a](https://user-images.githubusercontent.com/42773187/82301096-941b6e00-99d9-11ea-9ad9-dc7ec2a17e12.png)
-#### Step 4: Start "automate.bat"
-![Step-7](https://user-images.githubusercontent.com/42773187/82299643-97155f00-99d7-11ea-8e65-c29c5cf7eb7a.png)
-#### Step 5: Add Required Information
-![Step-8](https://user-images.githubusercontent.com/42773187/82299644-97adf580-99d7-11ea-8d18-501fa8d0f06b.png)
-![Step-9](https://user-images.githubusercontent.com/42773187/82299647-98468c00-99d7-11ea-9b5a-d153eb98b670.png)
-#### Step 6: Continue If You Agree
-![Step-10](https://user-images.githubusercontent.com/42773187/82302900-0d1bc500-99dc-11ea-9015-bf5896597cc5.png)
-#### Success: Processing and Completion
-![Step-11](https://user-images.githubusercontent.com/42773187/82299649-98df2280-99d7-11ea-9704-8dd98a30bb58.png)
-![Step-12](https://user-images.githubusercontent.com/42773187/82299652-9977b900-99d7-11ea-8aa2-d6679f51e16c.png)
-![Step-13](https://user-images.githubusercontent.com/42773187/82301821-9b8f4700-99da-11ea-8568-aef22f6ad06e.png)
+## Usage
+Everything is straight forward. You just need a Windows computer to prepare the modules.
+Do the following step by step __(*important)__:
+- Download the latest ``Font Automizer`` to your Desktop* and extract the files.
+- Copy your fonts and paste inside the newly created folder.
+- For __Bengali__, rename according to this chart.
+- __At least ``1.ttf`` should be present for changes to take effect.__
+  ```
+  Regular > 1.ttf
+  Medium > 2.ttf
+  Bold > 3.ttf
+  ```
+- For __English__ (Standard), rename according to this chart.
+- __At least ``101.ttf`` should be present for changes to take effect.__
+  ```
+  Regular > 101.ttf
+  Italic > 102.ttf
+  Bold > 103.ttf
+  Bold Italic > 104.ttf
+
+  Black > 105.ttf
+  Black Italic > 106.ttf
+
+  Medium > 107.ttf
+  Medium Italic > 108.ttf
+
+  Light > 109.ttf
+  Light Italic > 110.ttf
+
+  Thin > 111.ttf
+  Thin Italic > 112.ttf
+  ```
+- For __English__ Condensed, rename according to this chart.
+- __At least ``201.ttf`` should be present for changes to take effect.__
+  ```
+  Condensed Regular > 201.ttf
+  Condensed Italic > 202.ttf
+  Condensed Bold > 203.ttf
+  Condensed Bold Italic > 204.ttf
+
+  Condensed Medium > 205.ttf
+  Condensed Medium Italic > 206.ttf
+
+  Condensed Light > 207.ttf
+  Condensed Light Italic > 208.ttf
+  ```
+- For __English__ Monospace, rename to ``301.ttf``.
+- For __Emoji__, rename to ``401.ttf``.
+- For the rest, rename to the font name you want to replace in ```/system/fonts```.
+- Finally, flash the FFI zip in Magisk and reboot.
+- __NOTE: OTF files will also work. Rename similarly to these lists.__
+- __NOTE 2: If you don't provide a font, it will be replaced by a related variant.__ So, if (for English) ``202.ttf`` is not available, ``201.ttf`` will be automatically copied and used for ``202.ttf`` in your device.
 
 ## License
 
