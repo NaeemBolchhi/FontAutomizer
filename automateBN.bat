@@ -70,8 +70,8 @@ if exist 2.ttf (
 ) else (
   echo ^  "2.ttf" was not found.
   set "autoREGULAR=1.ttf"
-  set "autoMEDIUM=1.ttf"
   set "autoBOLD=1.ttf"
+  set "autoMEDIUM=1.ttf"
   echo.
   echo ^- Regular variant will be used in place of all variants.
   echo.
@@ -81,8 +81,8 @@ if exist 2.ttf (
 if exist 3.ttf (
   echo ^  "3.ttf" was found.
   set "autoREGULAR=1.ttf"
-  set "autoMEDIUM=2.ttf"
-  set "autoBOLD=3.ttf"
+  set "autoBOLD=2.ttf"
+  set "autoMEDIUM=3.ttf"
   echo.
   echo ^- All variants available.
   echo.
@@ -91,8 +91,8 @@ if exist 3.ttf (
 ) else (
   echo ^  "3.ttf" was not found.
   set "autoREGULAR=1.ttf"
-  set "autoMEDIUM=1.ttf"
   set "autoBOLD=2.ttf"
+  set "autoMEDIUM=1.ttf"
   echo.
   echo ^- Regular variant will be used in place of Medium variant.
   echo.
@@ -119,8 +119,8 @@ if exist 2.otf (
 ) else (
   echo ^  "2.otf" was not found.
   set "autoREGULAR=1.otf"
-  set "autoMEDIUM=1.otf"
   set "autoBOLD=1.otf"
+  set "autoMEDIUM=1.otf"
   echo.
   echo ^- Regular variant will be used in place of all variants.
   echo.
@@ -130,8 +130,8 @@ if exist 2.otf (
 if exist 3.otf (
   echo ^  "3.otf" was found.
   set "autoREGULAR=1.otf"
-  set "autoMEDIUM=2.otf"
-  set "autoBOLD=3.otf"
+  set "autoBOLD=2.otf"
+  set "autoMEDIUM=3.otf"
   echo.
   echo ^- All variants available.
   echo.
@@ -140,8 +140,8 @@ if exist 3.otf (
 ) else (
   echo ^  "3.otf" was not found.
   set "autoREGULAR=1.otf"
-  set "autoMEDIUM=1.otf"
   set "autoBOLD=2.otf"
+  set "autoMEDIUM=1.otf"
   echo.
   echo ^- Regular variant will be used in place of Medium variant.
   echo.
@@ -428,4 +428,4 @@ exit /b
 :: v1.1.1 on 07 Jun 2020. Bug fix.
 :: v2.0.0 on 14 Jun 2020. Support for English fonts.
 :: v2.0.1 on 16 Jun 2020. Improved logic. Minor bug fix.
-:: v2.0.2 on 23 Jul 2020. English base updated to CFI-v2.0.
+:: v2.0.2 on 23 Jul 2020. English base updated to CFI-v2.0. Bengali font logic improved.
