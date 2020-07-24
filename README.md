@@ -18,8 +18,8 @@ Do the following step by step __(*important)__:
 - __At least ``1.ttf`` should be present for changes to take effect.__
   ```
   Regular > 1.ttf
-  Medium > 2.ttf
-  Bold > 3.ttf
+  Bold > 2.ttf
+  Medium > 3.ttf
   ```
 - For __English (Standard)__, rename according to this chart.
 - __At least ``101.ttf`` should be present for changes to take effect.__
