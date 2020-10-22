@@ -60,7 +60,7 @@ Do the following step by step __(*important)__:
 - For the rest, rename to the font name you want to replace in ```/system/fonts```.
 - Finally, flash the newly created ZIP in Magisk (root) or TWRP (rootless) and reboot.
 - __NOTE: OTF files will also work. Rename similarly to these lists.__
-- __NOTE 2: If you don't provide a font, it will be replaced by the closest variant.__ So, if (for English) ``202.ttf`` is not available, ``201.ttf`` will be automatically copied and used for ``202.ttf`` in your device.
+- __NOTE 2: If you don't provide a font, it will be replaced with the closest variant.__ So, if (for English) ``202.ttf`` is not available, ``201.ttf`` will be automatically copied and used for ``202.ttf`` in your device.
 
 ## License
 
