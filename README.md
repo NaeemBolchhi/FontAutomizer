@@ -3,17 +3,17 @@ A script to automate the creation of Bengali/English font packages for Magisk an
 Note that the program does not come with any fonts. You have to obtain and provide the Unicode fonts by yourself.
 
 ## Features
-* Can create Bengali and English font modules for Magisk.
-* Can create Bengali font packages for Recovery.
+* Can create flashable font packages for Android (Magisk/Recovery).
+* Can create a single or separate font packages for Bengali, English, and Emoji fonts.
 
 ## Newest Release
-[v2.0.2](https://github.com/NaeemBolchhi/FontAutomizer/releases)
+[v2.1.0](https://github.com/NaeemBolchhi/FontAutomizer/releases)
 
 ## Usage
 Everything is straight forward. You just need a Windows computer to prepare the modules.
 Do the following step by step __(*important)__:
 - Download the latest ``Font Automizer`` to your Desktop* and extract the files.
-- Copy your fonts and paste inside the newly created folder.
+- Copy your fonts and paste them inside the newly created folder.
 - For __Bengali__, rename according to this chart.
 - __At least ``1.ttf`` should be present for changes to take effect.__
   ```
@@ -58,9 +58,9 @@ Do the following step by step __(*important)__:
 - For __English Monospace__, rename to ``301.ttf``.
 - For __Emoji__, rename to ``401.ttf``.
 - For the rest, rename to the font name you want to replace in ```/system/fonts```.
-- Finally, flash the FFI zip in Magisk and reboot.
+- Finally, flash the newly created ZIP in Magisk (root) or TWRP (rootless) and reboot.
 - __NOTE: OTF files will also work. Rename similarly to these lists.__
-- __NOTE 2: If you don't provide a font, it will be replaced by a related variant.__ So, if (for English) ``202.ttf`` is not available, ``201.ttf`` will be automatically copied and used for ``202.ttf`` in your device.
+- __NOTE 2: If you don't provide a font, it will be replaced by the closest variant.__ So, if (for English) ``202.ttf`` is not available, ``201.ttf`` will be automatically copied and used for ``202.ttf`` in your device.
 
 ## License
 
